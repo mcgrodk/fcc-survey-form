@@ -7,141 +7,90 @@
 </head>
 
 <body>
-    <h1 id="title">
-        Milliways Customer Survey
-    </h1>
-      <p id="description">
+    <h1 id="title">Milliways Customer Survey</h1>
+    <p id="description">
         Please rate your dining experience at Milliways, the Restaurant at the End of the Universe!
     </p>
-
+    
     <div class="form-container">
       <form id="survey-form">
-
-        <label id="name-label" class="label">
-            Name
-        </label>
-        
-        <input 
+          <label id="name-label">Name</label>
+          <input 
             id="name" 
             type="text"
             class="text-field"
             placeholder="Tell me your name, human"
             required
-        />
+          />
         
-        <label id="email-label" class="label">
-            Email
-        </label>
-        
-        <input 
+          <label id="email-label">Email</label>
+          <input 
             id="email" 
             type="email"     
             class="text-field"
             placeholder="Email digits"                    
             required
-        />
-
-        <label id="number-label" class="label">
-            Age (optional)
-        </label>
-
-        <input 
+           />
+        
+          <label id="number-label">Age (optional)</label>
+          <input 
             id="number" 
             type="number" 
             min="1"
             max="42"
             class="text-field"
             placeholder="42"
-        />
+          />
         
-        <label id="planet-label" class="label">
+          <p id="planet-label">
             Please select your planet of residence.
-        </label>
-        <select 
-            id="dropdown" 
-            name="planet" 
-            placeholder="Select a planet"
-        >
-        <option value="Earth">Earth</option>
-        <option value="Betelgeuse">Betelgeuse</option>
-        <option value="Magrathea">Magrathea</option>
-        </select>
-
-        <label id="radio-label" class="label">
-            Would you recommend Milliways to a friend or foe?
-        </label>
-
-        <label for="yes">
-        <input 
-            id="yes" 
-            type="radio" 
-            name="yes-no">Yes
-        </label>
-
-        <label for="no">
-            <input 
-                id="no" 
-                type="radio" 
-                name="yes-no">No
-          </label>
-
-        <label for="unsure">
-            <input 
-            id="unsure" 
-            type="radio" 
-            name="yes-no">Unsure
-        </label>
-
-        <p id="suggestion-label">
-            What would you like to see more of at Milliways? (Check all that apply)
-        </p>
-        <label for="gargle-blaster">
-            <input 
-            id="gargle=blaster" 
-            type="checkbox" 
-            id="suggestion">Pan-Galactic Gargle Blasters
-        </label>
-
-        <label for="android">
-            <input 
-            id="android" 
-            type="checkbox" 
-            id="suggestion">Depressed androids
-        </label>
-
-        <label for="end-of-universe">
-            <input 
-            id="end-of-universe" 
-            type="checkbox" 
-            id="suggestion">Universe explosions
-        </label>
-
-        <label for="vogon">
-            <input 
-            id="vogon" 
-            type="checkbox" 
-            id="suggestion">Vogons
-        </label>
-
-        <label for="42">
-            <input 
-            id="42" 
-            type="checkbox" 
-            id="suggestion">42
-        </label>
-
-        <p id="comment-label">Anything else?</p>
-        <textarea 
-          id="comment-box" 
-          name="comment-box" 
-          rows="5" 
-          cols="30" 
-          placeholder="Let's talk abbout it">
-        </textarea>
-        <br>
+          </p>
+          <select id="dropdown" name="planet" placeholder="Select a planet">
+              <option value="Earth">Earth</option>
+              <option value="Betelgeuse">Betelgeuse</option>
+              <option value="Magrathea">Magrathea</option>
+          </select>
         
-        <button id="submit">Submit</button>
+          <p id="radio-label">How would you rate your overall experience at Milliways?</p>
+          <label for="fantastic">
+              <input type="radio" id="fantastic" name="rating" value="fantastic">Wonderfully fantastic
+          </label>
+          <label for="delightful">
+              <input type="radio" id="delightful" name="rating" value="delightful">Predominatly delightful
+          </label>
+          <label for="acceptable">
+              <input type="radio" id="acceptable" name="rating" value="acceptable">Painstakingly acceptable
+          </label>
+          <label for="dreadful">
+              <input type="radio" id="dreadful" name="rating" value="dreadfull">Absolutely dreadful
+          </label>
+        
+          <p id="suggestion-label">What would you like to see more of at Milliways? (Check all that apply)</p>
+          <label for="gargle-blaster">
+            <input type="checkbox" id="suggestion" name="gargleblaster" value="gargleblaster">
+            Pan-Galactic Gargle Blasters
+            </label>
+          <label for="android">
+            <input type="checkbox" id="suggestion" name="android" value="android">
+            Depressed androids
+            </label>
+          <label for="end-of-universe">
+            <input type="checkbox" id="suggestion" name="end-of-universe" value="end-of-universe">
+            Universe explosions
+            </label>
+          <label for="vogon">
+            <input type="checkbox" id="suggestion" name="vogon" value="vogon">
+            Vogons
+            </label>
+          <label for="42">
+            <input type="checkbox" id="suggestion" name="42" value="42">
+            42
+            </label>
+        
+          <p id="comment-label">Additional Comments:</p>
+          <textarea id="comment-box" name="comment-box" rows="5" cols="30" placeholder="Leave comments here. I won't enjoy them."></textarea>
+          <br>
+          <button id="submit">Submit</button>
+        </form>
     </div>
-    </form>
-
 </body>
