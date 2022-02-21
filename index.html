@@ -37,7 +37,7 @@
             id="number" 
             type="number" 
             min="1"
-            max="42"
+            max="4000"
             class="text-field"
             placeholder="42"
           />
@@ -45,10 +45,15 @@
           <p id="planet-label">
             Please select your planet of residence.
           </p>
-          <select id="dropdown" name="planet" placeholder="Select a planet">
-              <option value="Earth">Earth</option>
-              <option value="Betelgeuse">Betelgeuse</option>
-              <option value="Magrathea">Magrathea</option>
+          <select id="dropdown" name="planet">
+            <option disabled selected option>--Select a planet--</option>
+            <option value="Earth">Earth</option>
+            <option value="Betelgeuse-V">Betelgeuse V</option>
+            <option value="Vogsphere">Vogsphere</option>
+            <option value="Magrathea">Magrathea</option>
+            <option value="Bethselamine">Bethselamine</option>
+            <option value="Damogran">Damogran</option>
+            <option value="Viltvodle-VI">Viltvodle IV</option>
           </select>
         
           <p id="radio-label">How would you rate your overall experience at Milliways?</p>
@@ -86,6 +91,13 @@
             <input type="checkbox" id="suggestion" name="42" value="42">
             42
             </label>
+
+          <p id="ultimate-question-label">What do you get when you multiple six by seven?</p>
+          <select id="dropdown" name="ultimate-question">
+            <option disabled selected option>--Select the Answer--</option>
+            <option value="42">42</option>
+          </select>
+
         
           <p id="comment-label">Additional Comments:</p>
           <textarea id="comment-box" name="comment-box" rows="5" cols="30" placeholder="Leave comments here. I won't enjoy them."></textarea>
