@@ -75,6 +75,10 @@ label {
   font-weight: bold;
 }
 
+#submit:hover {
+  cursor: pointer;
+}
+
 .text-field, #comment-box, #submit {
   opacity: 1;
 }

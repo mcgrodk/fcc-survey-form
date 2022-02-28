@@ -19,16 +19,16 @@
             id="name" 
             type="text"
             class="text-field"
-            placeholder="Tell me your name, human"
+            placeholder="Enter your name"
             required
           />
         
-          <label id="email-label">Email</label>
+          <label id="email-label">Means of Intergalactic Communication</label>
           <input 
             id="email" 
             type="email"     
             class="text-field"
-            placeholder="Email digits"                    
+            placeholder="Also known as email"                    
             required
            />
         
@@ -39,7 +39,7 @@
             min="1"
             max="4000"
             class="text-field"
-            placeholder="42"
+            placeholder="Age"
           />
         
           <p id="planet-label">
@@ -54,6 +54,10 @@
             <option value="Bethselamine">Bethselamine</option>
             <option value="Damogran">Damogran</option>
             <option value="Viltvodle-VI">Viltvodle IV</option>
+            <option value="Ursa-Minor-Beta">Ursa Minor Beta</option>
+            <option value="Frogstar-World-A">Frogstar World A</option>
+            <option value="Oglaroon">Oglaroon</option>
+          </select>
           </select>
         
           <p id="radio-label">How would you rate your overall experience at Milliways?</p>
@@ -70,30 +74,30 @@
               <input type="radio" id="dreadful" name="rating" value="dreadfull">Absolutely dreadful
           </label>
         
-          <p id="suggestion-label">What would you like to see more of at Milliways? (Check all that apply)</p>
+          <p id="suggestion-label">What features of Milliways did you enjoy most? (Check all that apply)</p>
           <label for="gargle-blaster">
             <input type="checkbox" id="suggestion" name="gargleblaster" value="gargleblaster">
             Pan-Galactic Gargle Blasters
             </label>
-          <label for="android">
-            <input type="checkbox" id="suggestion" name="android" value="android">
-            Depressed androids
+          <label for="celebrities">
+            <input type="checkbox" id="suggestion" name="celebrities" value="celebrities">
+            Temporarily deceased celebrity patrons
             </label>
           <label for="end-of-universe">
             <input type="checkbox" id="suggestion" name="end-of-universe" value="end-of-universe">
-            Universe explosions
+            Spectacular universe explosions
             </label>
-          <label for="vogon">
-            <input type="checkbox" id="suggestion" name="vogon" value="vogon">
-            Vogons
+          <label for="reservation">
+            <input type="checkbox" id="suggestion" name="reservation" value="reservation">
+            Easy reservation methods
             </label>
-          <label for="42">
-            <input type="checkbox" id="suggestion" name="42" value="42">
-            42
+          <label for="other">
+            <input type="checkbox" id="suggestion" name="other" value="other">
+            Other (specify below)
             </label>
 
           <p id="ultimate-question-label">What do you get when you multiple six by seven?</p>
-          <select id="dropdown" name="ultimate-question">
+          <select id="dropdown" name="ultimate-question" required>
             <option disabled selected option>--Select the Answer--</option>
             <option value="42">42</option>
           </select>
